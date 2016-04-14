@@ -1,5 +1,10 @@
 package ohtu;
 
+/**
+ * viikko4:n ohjeet https://github.com/mluukkai/ohtu2016/wiki/laskari-4
+ * @author Antero Oikkonen
+ */
+
 public class Submission {
     private String student_number;
 
