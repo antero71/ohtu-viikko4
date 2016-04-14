@@ -29,28 +29,25 @@ public class TiedostonLukija {
     }
 
     public String hakeRivi() {
-      
-       BufferedReader in=null;
+
+        BufferedReader in = null;
         try {
             in
                     = new BufferedReader(new FileReader(tiedosto));
 
-            // dis.available() returns 0 if the file does not have more lines.
-            
-            
             return in.readLine();
-         
+
         } catch (FileNotFoundException e) {
             e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
-        }finally{
-            
-           try {
-               in.close();
-           } catch (IOException ex) {
-               Logger.getLogger(TiedostonLukija.class.getName()).log(Level.SEVERE, null, ex);
-           }
+        } finally {
+
+            try {
+                in.close();
+            } catch (IOException ex) {
+                Logger.getLogger(TiedostonLukija.class.getName()).log(Level.SEVERE, null, ex);
+            }
         }
         return null;
     }
